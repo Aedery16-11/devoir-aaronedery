@@ -43,11 +43,13 @@ public class Pigiste
     public double calculerCA()
     {
         double ca = 0;
+        double somme = 0;
 
         // A vous de jouer
         for (Article article : lesArticles)
         {
-            ca  = article.getNbPages() * getPrixPage();
+            somme =  getPrixPage() * article.getNbPages();
+            ca  = article.getNbPages() * somme;
         }
         return ca;
     }

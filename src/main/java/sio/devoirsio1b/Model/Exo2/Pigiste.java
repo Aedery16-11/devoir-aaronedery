@@ -50,6 +50,7 @@ public class Pigiste
         {
             somme =  getPrixPage() * article.getNbPages();
             ca  = article.getNbPages() * somme;
+
         }
         return ca;
     }
